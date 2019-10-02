@@ -1,1 +1,26 @@
 All about DataFrame
+
+
++The read_csv function loads our dataset into memory. 
++A csv file is a comma separated document file. 
+-The csv is a dataset most used by machine learning models. 
+*A comment is created with the pound sign and is documentation about our code. 
++The read_csv function can load datasets from URLs. 
++Every dataframe in pandas has a shape attribute that will give use the numbers of columns and rows in our dataset. 
++The head method prints out the first 5 rows in a dataframe starting at index 0. 
++The tail methods prints out the last 5 rows of our dataframe.
++We can also select a subset of our data. This process is called subsetting. 
++We use square brackets [ ] to select a subset of an Python object.
++The three core slicing methods in Pandas are below. 
++loc works on labels in the index.
++iloc works on the positions in the index (so it only takes integers).
++ix usually tries to behave like loc but falls back to behaving like iloc if the label is not in the index.
++By default, ix will search for labels. 
++The three core slicing methods can subset rows and columns simultaneously. 
++We separate the row subset values and the column subset values with a comma. 
++Rows will be on the left hand side and columns will be on the right hand side. (Section 2, Lecture 12) 
++Any groupby operation involves one of the following operations on the original object.
++Splitting the Object
++Applying a function
++Combining the results
++The .groupby() function allows us to group records into buckets by categorical values
